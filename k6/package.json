@@ -1,0 +1,15 @@
+{
+    "name": "k6-dapr-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "sample-run.js",
+    "scripts": {
+        "test": "dapr run --app-id loadtest-http --resources-path ../components/  --app-port 5003 -- k6 run ./sample-run.js "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "express": "^4.18.2"
+    }
+}
